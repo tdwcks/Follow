@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Follow/ViewController.swift"
+            timestampString = "479674858.306467"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Follow.ViewController.__deallocating_deinit"
+                  moduleName = "Follow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tom/Localhost/internet/Follow/Follow/ViewController.swift"
+                  timestampString = "479674872.527188"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Follow.ViewController.init (Follow.ViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Follow.ViewController"
+                  moduleName = "Follow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tom/Localhost/internet/Follow/Follow/ViewController.swift"
+                  timestampString = "479674872.527486"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Follow.ViewController.init (Follow.ViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Follow.ViewController&gt;"
+                  moduleName = "Follow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tom/Localhost/internet/Follow/Follow/ViewController.swift"
+                  timestampString = "479674872.527742"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Follow/ViewController.swift"
+            timestampString = "479674858.306467"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Follow.ViewController.__deallocating_deinit"
+                  moduleName = "Follow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tom/Localhost/internet/Follow/Follow/ViewController.swift"
+                  timestampString = "479674872.608917"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Follow.ViewController.init (Follow.ViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Follow.ViewController"
+                  moduleName = "Follow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tom/Localhost/internet/Follow/Follow/ViewController.swift"
+                  timestampString = "479674872.60921"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Follow.ViewController.init (Follow.ViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Follow.ViewController&gt;"
+                  moduleName = "Follow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tom/Localhost/internet/Follow/Follow/ViewController.swift"
+                  timestampString = "479674872.610042"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
