@@ -17,19 +17,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Zce-s5-JlS">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zce-s5-JlS">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Exd-PR-Yll">
+                                <rect key="frame" x="273" y="550" width="55" height="30"/>
+                                <state key="normal" title="Find Me"/>
+                                <connections>
+                                    <action selector="centreOnUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6hR-oY-6x9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Zce-s5-JlS" secondAttribute="trailing" id="3X7-zi-Ef9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Exd-PR-Yll" secondAttribute="bottom" constant="20" id="MQA-EE-UXP"/>
+                            <constraint firstItem="Exd-PR-Yll" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WVb-jQ-3Bv"/>
                             <constraint firstItem="Zce-s5-JlS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Yuc-bZ-Bdd"/>
                             <constraint firstItem="Zce-s5-JlS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cMa-v8-zr9"/>
                             <constraint firstItem="Zce-s5-JlS" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="ju1-Sh-vH0"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="findMeButton" destination="Exd-PR-Yll" id="1MR-gq-BJr"/>
                         <outlet property="mapView" destination="Zce-s5-JlS" id="AEz-ez-Ojd"/>
                     </connections>
                 </viewController>

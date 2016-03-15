@@ -7,10 +7,9 @@
 //
 
 import UIKit
-import PubNub
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, PNObjectEventListener {
+class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
@@ -19,32 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PNObjectEventListener {
         return true
     }
     
-    // Instance property
-    var client: PubNub?
     
     // For demo purposes the initialization is done in the init function so that
     // the PubNub client is instantiated before it is used.
     override init() {
-        
-        // Instantiate configuration instance.
-        let configuration = PNConfiguration(publishKey: "pub-c-2abab4a3-189a-4355-b694-bd63a2ff00ae", subscribeKey: "sub-c-86d2f1ae-e9f8-11e5-bf9d-02ee2ddab7fe")
-        // Instantiate PubNub client.
-        client = PubNub.clientWithConfiguration(configuration)
-        
+    
         super.init()
-        client?.addListener(self)
-        
-        self.client?.publish("Hello from the PubNub Swift SDK", toChannel: "my_channel",
-            compressed: false, withCompletion: { (status) -> Void in
-                
-                if !status.error {
-                    print("Wooooo")
-                }
-                else{
-                    print("Fucked it")
-            
-                }
-        })
         
     }
     

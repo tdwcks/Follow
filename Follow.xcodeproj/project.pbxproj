@@ -18,6 +18,8 @@
 		E235D9F51C96F62200400077 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E235D9F31C96F62200400077 /* LaunchScreen.storyboard */; };
 		E235DA001C96F62200400077 /* FollowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235D9FF1C96F62200400077 /* FollowTests.swift */; };
 		E235DA0B1C96F62200400077 /* FollowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235DA0A1C96F62200400077 /* FollowUITests.swift */; };
+		E2DE35E61C988A7E000E84A5 /* CrumbPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DE35E31C988A7E000E84A5 /* CrumbPath.m */; };
+		E2DE35E71C988A7E000E84A5 /* CrumbPathRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DE35E51C988A7E000E84A5 /* CrumbPathRenderer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,11 @@
 		E235DA061C96F62200400077 /* FollowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FollowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E235DA0A1C96F62200400077 /* FollowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowUITests.swift; sourceTree = "<group>"; };
 		E235DA0C1C96F62200400077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2DE35E11C988A7D000E84A5 /* Follow-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Follow-Bridging-Header.h"; sourceTree = "<group>"; };
+		E2DE35E21C988A7E000E84A5 /* CrumbPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrumbPath.h; sourceTree = "<group>"; };
+		E2DE35E31C988A7E000E84A5 /* CrumbPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrumbPath.m; sourceTree = "<group>"; };
+		E2DE35E41C988A7E000E84A5 /* CrumbPathRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrumbPathRenderer.h; sourceTree = "<group>"; };
+		E2DE35E51C988A7E000E84A5 /* CrumbPathRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrumbPathRenderer.m; sourceTree = "<group>"; };
 		FC8E487FCAEB242369146A97 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,10 +141,15 @@
 			children = (
 				E235D9EA1C96F62200400077 /* AppDelegate.swift */,
 				E235D9EC1C96F62200400077 /* ViewController.swift */,
+				E2DE35E21C988A7E000E84A5 /* CrumbPath.h */,
+				E2DE35E31C988A7E000E84A5 /* CrumbPath.m */,
+				E2DE35E41C988A7E000E84A5 /* CrumbPathRenderer.h */,
+				E2DE35E51C988A7E000E84A5 /* CrumbPathRenderer.m */,
 				E235D9EE1C96F62200400077 /* Main.storyboard */,
 				E235D9F11C96F62200400077 /* Assets.xcassets */,
 				E235D9F31C96F62200400077 /* LaunchScreen.storyboard */,
 				E235D9F61C96F62200400077 /* Info.plist */,
+				E2DE35E11C988A7D000E84A5 /* Follow-Bridging-Header.h */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -345,6 +357,8 @@
 			files = (
 				E235D9ED1C96F62200400077 /* ViewController.swift in Sources */,
 				E235D9EB1C96F62200400077 /* AppDelegate.swift in Sources */,
+				E2DE35E61C988A7E000E84A5 /* CrumbPath.m in Sources */,
+				E2DE35E71C988A7E000E84A5 /* CrumbPathRenderer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +499,7 @@
 			baseConfigurationReference = 7DC7129F97E02EFF35B4FB29 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
@@ -493,6 +508,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.miln.Follow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Follow/Follow-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -501,6 +518,7 @@
 			baseConfigurationReference = FC8E487FCAEB242369146A97 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
@@ -509,6 +527,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.miln.Follow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Follow/Follow-Bridging-Header.h";
 			};
 			name = Release;
 		};

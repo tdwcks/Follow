@@ -11,22 +11,70 @@ import MapKit
 import CoreLocation
 import PubNub
 
-class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+@objc class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, PNObjectEventListener {
 
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var findMeButton: UIButton!
     
     let locationManager = CLLocationManager()
     
     let configuration = PNConfiguration(publishKey: "pub-c-2abab4a3-189a-4355-b694-bd63a2ff00ae", subscribeKey: "sub-c-86d2f1ae-e9f8-11e5-bf9d-02ee2ddab7fe")
     
+    var client: PubNub?
+    
+    var crumbPath: CrumbPath?
+    var crumbPathRenderer: CrumbPathRenderer?
+    
+    @IBAction func centreOnUser(sender: AnyObject) {
+        mapView.userTrackingMode = .Follow
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        client = PubNub.clientWithConfiguration(configuration)
+        client?.addListener(self)
         self.locationManager.delegate = self
+        self.locationManager.allowsBackgroundLocationUpdates = true
+        self.locationManager.requestAlwaysAuthorization()
+        self.locationManager.pausesLocationUpdatesAutomatically = true
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        self.locationManager.requestWhenInUseAuthorization()
+        self.locationManager.distanceFilter = 5.0
         self.locationManager.startUpdatingLocation()
+        self.mapView.delegate = self
+        self.mapView.userTrackingMode = .Follow
         self.mapView.showsUserLocation = true
+    }
+    
+    func addCrumbPoint(point:CLLocationCoordinate2D) {
+        
+        if let _ = crumbPath {
+            
+            //var boundingMapRectChanged = false
+            crumbPath!.addCoordinate(point)
+            
+            mapView.removeOverlay(crumbPath!)
+            crumbPathRenderer = nil
+            mapView.addOverlay(crumbPath!)
+            
+        }
+        else {
+            crumbPath = CrumbPath(centerCoordinate:point)
+            mapView.addOverlay(crumbPath!)
+        }
+    }
+    
+    func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
+        if (overlay.isKindOfClass(CrumbPath)) {
+            if let _ = crumbPathRenderer {
+            }
+            else {
+                crumbPathRenderer = CrumbPathRenderer(overlay:overlay)
+            }
+            return crumbPathRenderer!
+        }
+        return MKTileOverlayRenderer(overlay: overlay)
     }
     
     // Mark Location Delegate Methods 
@@ -35,15 +83,25 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     {
         let location = locations.last
         
+        
+        
         let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
         
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
-        
-        self.mapView.setRegion(region, animated: true)
-        
-        self.locationManager.stopUpdatingLocation()
+        addCrumbPoint(center)
         
         let message = "{\"lat\":\(location!.coordinate.latitude),\"lng\":\(location!.coordinate.longitude), \"alt\": \(location!.altitude)}"
+        
+        self.client?.publish(message, toChannel: "my_channel",
+            compressed: false, withCompletion: { (status) -> Void in
+                
+                if !status.error {
+                    print("Wooooo")
+                }
+                else{
+                    print("Fucked it")
+                    
+                }
+        })
         
         print(message)
         
