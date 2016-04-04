@@ -2,4 +2,84 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Follow/RegisterPageViewController.swift"
+            timestampString = "481483756.808559"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "RegisterPageViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Follow.RegisterPageViewController.repeatPasswordTextField.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "Follow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tom/Localhost/internet/Follow/Follow/RegisterPageViewController.swift"
+                  timestampString = "481483757.045576"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Follow.RegisterPageViewController.repeatPasswordTextField.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "Follow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tom/Localhost/internet/Follow/Follow/RegisterPageViewController.swift"
+                  timestampString = "481483757.045767"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Follow.RegisterPageViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Follow.RegisterPageViewController"
+                  moduleName = "Follow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tom/Localhost/internet/Follow/Follow/RegisterPageViewController.swift"
+                  timestampString = "481483757.045859"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Follow.RegisterPageViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Follow.RegisterPageViewController&gt;"
+                  moduleName = "Follow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tom/Localhost/internet/Follow/Follow/RegisterPageViewController.swift"
+                  timestampString = "481483757.045948"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "138">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

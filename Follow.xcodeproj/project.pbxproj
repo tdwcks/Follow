@@ -20,6 +20,8 @@
 		E235DA0B1C96F62200400077 /* FollowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235DA0A1C96F62200400077 /* FollowUITests.swift */; };
 		E27EC66E1CB2812A004E763D /* GT-Walsheim-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E27EC66D1CB2812A004E763D /* GT-Walsheim-Regular.ttf */; };
 		E27EC6701CB2B925004E763D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27EC66F1CB2B925004E763D /* CustomTextField.swift */; };
+		E27EC6721CB2CA3F004E763D /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27EC6711CB2CA3F004E763D /* RegisterPageViewController.swift */; };
+		E27EC6741CB2D6DC004E763D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27EC6731CB2D6DC004E763D /* LoginViewController.swift */; };
 		E2D69DDD1CB267C10051F381 /* Location.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2D69DDB1CB267C10051F381 /* Location.xcdatamodeld */; };
 		E2DE35E61C988A7E000E84A5 /* CrumbPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DE35E31C988A7E000E84A5 /* CrumbPath.m */; };
 		E2DE35E71C988A7E000E84A5 /* CrumbPathRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DE35E51C988A7E000E84A5 /* CrumbPathRenderer.m */; };
@@ -63,6 +65,8 @@
 		E235DA0C1C96F62200400077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E27EC66D1CB2812A004E763D /* GT-Walsheim-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Regular.ttf"; sourceTree = "<group>"; };
 		E27EC66F1CB2B925004E763D /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		E27EC6711CB2CA3F004E763D /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
+		E27EC6731CB2D6DC004E763D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E2D69DDC1CB267C10051F381 /* Location.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Location.xcdatamodel; sourceTree = "<group>"; };
 		E2DE35E11C988A7D000E84A5 /* Follow-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Follow-Bridging-Header.h"; sourceTree = "<group>"; };
 		E2DE35E21C988A7E000E84A5 /* CrumbPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrumbPath.h; sourceTree = "<group>"; };
@@ -159,6 +163,8 @@
 				E235D9F31C96F62200400077 /* LaunchScreen.storyboard */,
 				E235D9F61C96F62200400077 /* Info.plist */,
 				E2DE35E11C988A7D000E84A5 /* Follow-Bridging-Header.h */,
+				E27EC6711CB2CA3F004E763D /* RegisterPageViewController.swift */,
+				E27EC6731CB2D6DC004E763D /* LoginViewController.swift */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -366,8 +372,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E235D9ED1C96F62200400077 /* ViewController.swift in Sources */,
+				E27EC6721CB2CA3F004E763D /* RegisterPageViewController.swift in Sources */,
 				E2D69DDD1CB267C10051F381 /* Location.xcdatamodeld in Sources */,
 				E27EC6701CB2B925004E763D /* CustomTextField.swift in Sources */,
+				E27EC6741CB2D6DC004E763D /* LoginViewController.swift in Sources */,
 				E235D9EB1C96F62200400077 /* AppDelegate.swift in Sources */,
 				E2DE35E61C988A7E000E84A5 /* CrumbPath.m in Sources */,
 				E2DE35E71C988A7E000E84A5 /* CrumbPathRenderer.m in Sources */,
