@@ -15,6 +15,7 @@ import PubNub
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var findMeButton: UIButton!
+    @IBOutlet weak var customTextField: UITextField!
     
     let locationManager = CLLocationManager()
     
@@ -32,7 +33,6 @@ import PubNub
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
         client = PubNub.clientWithConfiguration(configuration)
         client?.addListener(self)
         self.locationManager.delegate = self
@@ -46,7 +46,7 @@ import PubNub
         self.mapView.userTrackingMode = .Follow
         self.mapView.showsUserLocation = true
     }
-    
+
     func addCrumbPoint(point:CLLocationCoordinate2D) {
         
         if let _ = crumbPath {
@@ -82,13 +82,8 @@ import PubNub
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     {
         let location = locations.last
-        
-        
-        
         let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
-        
         addCrumbPoint(center)
-        
         let message = "{\"lat\":\(location!.coordinate.latitude),\"lng\":\(location!.coordinate.longitude), \"alt\": \(location!.altitude)}"
         
         self.client?.publish(message, toChannel: "my_channel",
@@ -107,9 +102,10 @@ import PubNub
         
     }
     
-    func locationManager(manager: CLLocationManager, didFailWithError error: NSError)
-    {
-        print("Errors: " + error.localizedDescription)
+    override func viewDidAppear(animated: Bool) {
+        self.performSegueWithIdentifier("loginView", sender: self)
+        
     }
+    
 }
 

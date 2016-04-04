@@ -1,10 +1,352 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Pxz-8x-Qv7">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="GT-Walsheim-Regular.ttf">
+            <string>GTWalsheimRegular</string>
+            <string>GTWalsheimRegular</string>
+            <string>GTWalsheimRegular</string>
+            <string>GTWalsheimRegular</string>
+            <string>GTWalsheimRegular</string>
+            <string>GTWalsheimRegular</string>
+            <string>GTWalsheimRegular</string>
+            <string>GTWalsheimRegular</string>
+            <string>GTWalsheimRegular</string>
+            <string>GTWalsheimRegular</string>
+            <string>GTWalsheimRegular</string>
+            <string>GTWalsheimRegular</string>
+            <string>GTWalsheimRegular</string>
+            <string>GTWalsheimRegular</string>
+            <string>GTWalsheimRegular</string>
+            <string>GTWalsheimRegular</string>
+            <string>GTWalsheimRegular</string>
+            <string>GTWalsheimRegular</string>
+            <string>GTWalsheimRegular</string>
+            <string>GTWalsheimRegular</string>
+            <string>GTWalsheimRegular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="Fof-aU-wjn">
+            <objects>
+                <viewController id="2yc-UR-f0X" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Hc-dX-8in"/>
+                        <viewControllerLayoutGuide type="bottom" id="wGa-dT-laF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zPI-Ap-otS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="f0k-qO-dsR">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="14"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Rry-er-fTe">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOz-mc-Xxi">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KII-2O-ZHy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <state key="normal" title="Log In"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="KII-2O-ZHy"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="KII-2O-ZHy"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohW-Pa-rAu">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="tub-mp-ysO"/>
+                                    <constraint firstAttribute="height" constant="30" id="vgt-9L-W1Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <state key="normal" title="Register"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="tub-mp-ysO"/>
+                                        <exclude reference="vgt-9L-W1Y"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="tub-mp-ysO"/>
+                                        <include reference="vgt-9L-W1Y"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log In" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogy-XY-wAX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="kLb-rS-xsR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69969383445945943" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" preservesSuperviewLayoutMargins="YES" text="Your Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wl3-i8-waz">
+                                <rect key="frame" x="20" y="89" width="71" height="22"/>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" preservesSuperviewLayoutMargins="YES" text="Your Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYZ-bJ-cZz">
+                                <rect key="frame" x="20" y="157" width="103" height="22"/>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="L2a-Q5-bzF" customClass="customTextField">
+                                <rect key="frame" x="0.0" y="119" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="s8h-k0-9lr" customClass="customTextField">
+                                <rect key="frame" x="0.0" y="187" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwu-9S-aoF">
+                                <rect key="frame" x="109" y="526" width="156" height="30"/>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <state key="normal" title="Sign up for an Account">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="J9D-c5-t4o" kind="presentation" id="CfK-SW-1aD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2W-5g-QSx">
+                                <rect key="frame" x="109" y="573" width="156" height="34"/>
+                                <color key="backgroundColor" red="0.14117647058823529" green="0.80784313725490198" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tRj-Rq-1Gt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="0.011764705882352941" green="0.40784313725490196" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ogy-XY-wAX" firstAttribute="top" secondItem="zPI-Ap-otS" secondAttribute="topMargin" constant="25" id="1IO-PT-5sv"/>
+                            <constraint firstItem="L2a-Q5-bzF" firstAttribute="top" secondItem="Wl3-i8-waz" secondAttribute="bottom" constant="15" id="2mx-ZM-iZe"/>
+                            <constraint firstItem="wGa-dT-laF" firstAttribute="top" secondItem="Cwu-9S-aoF" secondAttribute="bottom" constant="300" id="4oe-Mf-Nxt"/>
+                            <constraint firstItem="L2a-Q5-bzF" firstAttribute="leading" secondItem="zPI-Ap-otS" secondAttribute="leading" constant="17" id="5Ii-TA-f2d"/>
+                            <constraint firstItem="s8h-k0-9lr" firstAttribute="leading" secondItem="zPI-Ap-otS" secondAttribute="leading" constant="18" id="8Iu-fm-u2l"/>
+                            <constraint firstItem="Wl3-i8-waz" firstAttribute="leading" secondItem="zPI-Ap-otS" secondAttribute="leadingMargin" constant="50" id="9Jd-3U-s30"/>
+                            <constraint firstItem="s8h-k0-9lr" firstAttribute="top" secondItem="AYZ-bJ-cZz" secondAttribute="top" constant="36" id="AOv-Le-iqa"/>
+                            <constraint firstAttribute="bottom" secondItem="Cwu-9S-aoF" secondAttribute="bottom" id="Bjb-ep-Ic4"/>
+                            <constraint firstAttribute="trailing" secondItem="s8h-k0-9lr" secondAttribute="trailing" constant="18" id="EJm-i6-kwY"/>
+                            <constraint firstItem="AYZ-bJ-cZz" firstAttribute="leading" secondItem="zPI-Ap-otS" secondAttribute="leading" constant="17" id="FHZ-zN-P9i"/>
+                            <constraint firstItem="L2a-Q5-bzF" firstAttribute="leading" secondItem="zPI-Ap-otS" secondAttribute="leadingMargin" id="L9m-fS-fY9"/>
+                            <constraint firstItem="Ogy-XY-wAX" firstAttribute="leading" secondItem="zPI-Ap-otS" secondAttribute="leadingMargin" id="Nnv-eF-P7L"/>
+                            <constraint firstItem="Cwu-9S-aoF" firstAttribute="centerY" secondItem="zPI-Ap-otS" secondAttribute="centerY" id="P49-Va-DdJ"/>
+                            <constraint firstItem="L2a-Q5-bzF" firstAttribute="centerX" secondItem="zPI-Ap-otS" secondAttribute="centerX" id="Poa-Nv-91j"/>
+                            <constraint firstItem="Ogy-XY-wAX" firstAttribute="leading" secondItem="zPI-Ap-otS" secondAttribute="leading" id="QgN-yZ-BVV"/>
+                            <constraint firstItem="Cwu-9S-aoF" firstAttribute="centerX" secondItem="zPI-Ap-otS" secondAttribute="centerX" id="RYb-0X-YHT"/>
+                            <constraint firstAttribute="trailing" secondItem="L2a-Q5-bzF" secondAttribute="trailing" constant="17" id="SVS-FW-dkS"/>
+                            <constraint firstItem="d2W-5g-QSx" firstAttribute="width" secondItem="zPI-Ap-otS" secondAttribute="width" id="Tbb-e1-odB"/>
+                            <constraint firstItem="Wl3-i8-waz" firstAttribute="top" secondItem="Ogy-XY-wAX" secondAttribute="bottom" constant="25" id="UIq-Ro-wl3"/>
+                            <constraint firstItem="Cwu-9S-aoF" firstAttribute="leading" secondItem="zPI-Ap-otS" secondAttribute="leading" id="Vlx-1O-yEv"/>
+                            <constraint firstItem="Wl3-i8-waz" firstAttribute="leading" secondItem="zPI-Ap-otS" secondAttribute="leadingMargin" id="W7V-67-yNX"/>
+                            <constraint firstItem="Ogy-XY-wAX" firstAttribute="top" secondItem="zPI-Ap-otS" secondAttribute="top" id="Yf8-Ds-dc5"/>
+                            <constraint firstAttribute="trailing" secondItem="Ogy-XY-wAX" secondAttribute="trailing" id="afH-NO-iH8"/>
+                            <constraint firstItem="Wl3-i8-waz" firstAttribute="leading" secondItem="zPI-Ap-otS" secondAttribute="leading" constant="25" id="azK-aE-8fb"/>
+                            <constraint firstItem="L2a-Q5-bzF" firstAttribute="width" secondItem="zPI-Ap-otS" secondAttribute="width" id="eEN-VK-Hvy"/>
+                            <constraint firstItem="Wl3-i8-waz" firstAttribute="leading" secondItem="zPI-Ap-otS" secondAttribute="leadingMargin" constant="25" id="gFk-FR-bwx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ogy-XY-wAX" secondAttribute="trailing" id="gjq-n2-fS5"/>
+                            <constraint firstItem="Wl3-i8-waz" firstAttribute="top" secondItem="Ogy-XY-wAX" secondAttribute="bottom" constant="25" id="ls5-wv-spc"/>
+                            <constraint firstAttribute="bottom" secondItem="d2W-5g-QSx" secondAttribute="bottom" id="luP-1V-Bfm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wl3-i8-waz" secondAttribute="trailing" id="rnq-hY-fns"/>
+                            <constraint firstItem="AYZ-bJ-cZz" firstAttribute="top" secondItem="L2a-Q5-bzF" secondAttribute="top" constant="25" id="s04-q0-l4p"/>
+                            <constraint firstItem="L2a-Q5-bzF" firstAttribute="leading" secondItem="zPI-Ap-otS" secondAttribute="leading" constant="25" id="sCb-Tn-7mK"/>
+                            <constraint firstItem="AYZ-bJ-cZz" firstAttribute="bottom" secondItem="Wl3-i8-waz" secondAttribute="bottom" constant="80" id="sKP-zh-6vW"/>
+                            <constraint firstItem="L2a-Q5-bzF" firstAttribute="width" secondItem="zPI-Ap-otS" secondAttribute="width" id="whl-eD-r9e"/>
+                            <constraint firstItem="Cwu-9S-aoF" firstAttribute="centerX" secondItem="zPI-Ap-otS" secondAttribute="centerX" id="yqI-BZ-jw1"/>
+                            <constraint firstItem="Wl3-i8-waz" firstAttribute="leading" secondItem="zPI-Ap-otS" secondAttribute="leading" id="zpL-vN-g73"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="f0k-qO-dsR"/>
+                                <exclude reference="Rry-er-fTe"/>
+                                <exclude reference="dOz-mc-Xxi"/>
+                                <exclude reference="ohW-Pa-rAu"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="9Jd-3U-s30"/>
+                                <exclude reference="azK-aE-8fb"/>
+                                <exclude reference="gFk-FR-bwx"/>
+                                <exclude reference="ls5-wv-spc"/>
+                                <exclude reference="zpL-vN-g73"/>
+                                <exclude reference="L9m-fS-fY9"/>
+                                <exclude reference="Poa-Nv-91j"/>
+                                <exclude reference="eEN-VK-Hvy"/>
+                                <exclude reference="sCb-Tn-7mK"/>
+                                <exclude reference="whl-eD-r9e"/>
+                                <exclude reference="s04-q0-l4p"/>
+                                <exclude reference="Bjb-ep-Ic4"/>
+                                <exclude reference="RYb-0X-YHT"/>
+                                <exclude reference="Vlx-1O-yEv"/>
+                                <exclude reference="4oe-Mf-Nxt"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="f0k-qO-dsR"/>
+                                <include reference="Rry-er-fTe"/>
+                                <include reference="dOz-mc-Xxi"/>
+                                <include reference="ohW-Pa-rAu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCt-vF-i9w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="431.5" y="347.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zRF-E3-f7X">
+            <objects>
+                <viewController id="J9D-c5-t4o" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1er-jj-iPe"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Tz-Be-C6x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s3E-yx-HrY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Register Account" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7x-IV-G77">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="aoK-EN-hM7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.6996938345" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" preservesSuperviewLayoutMargins="YES" text="Your Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hha-rQ-d59">
+                                <rect key="frame" x="20" y="79" width="71" height="22"/>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" preservesSuperviewLayoutMargins="YES" text="Your Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dK-2R-aMO">
+                                <rect key="frame" x="20" y="147" width="103" height="22"/>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="2T5-2Q-kXd" customClass="customTextField">
+                                <rect key="frame" x="0.0" y="109" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="3dQ-l5-7fp" customClass="customTextField">
+                                <rect key="frame" x="0.0" y="177" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFa-dC-VPf">
+                                <rect key="frame" x="83" y="514" width="209" height="34"/>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <state key="normal" title="Already got an account? Log In">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaa-hv-O7y">
+                                <rect key="frame" x="109" y="563" width="156" height="34"/>
+                                <color key="backgroundColor" red="0.14117647059999999" green="0.80784313730000001" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NGL-D4-c8d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.01176470588" green="0.40784313729999999" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" preservesSuperviewLayoutMargins="YES" text="Retype Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDm-eT-3Tt">
+                                <rect key="frame" x="20" y="213" width="116" height="22"/>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Retype Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="LgM-fp-9xQ" customClass="customTextField">
+                                <rect key="frame" x="0.0" y="243" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3dQ-l5-7fp" firstAttribute="leading" secondItem="s3E-yx-HrY" secondAttribute="leading" constant="18" id="073-CI-bKB"/>
+                            <constraint firstItem="2T5-2Q-kXd" firstAttribute="leading" secondItem="s3E-yx-HrY" secondAttribute="leading" constant="18" id="3qe-dl-Bqr"/>
+                            <constraint firstItem="LgM-fp-9xQ" firstAttribute="bottom" secondItem="wDm-eT-3Tt" secondAttribute="bottom" constant="35" id="5u6-ar-ZT3"/>
+                            <constraint firstItem="wDm-eT-3Tt" firstAttribute="leading" secondItem="s3E-yx-HrY" secondAttribute="leading" constant="17" id="60D-yt-4LW"/>
+                            <constraint firstAttribute="bottom" secondItem="qaa-hv-O7y" secondAttribute="bottom" id="6gp-UQ-53Z"/>
+                            <constraint firstItem="wDm-eT-3Tt" firstAttribute="bottom" secondItem="3dQ-l5-7fp" secondAttribute="bottom" constant="35" id="B0m-3d-qOV"/>
+                            <constraint firstItem="4dK-2R-aMO" firstAttribute="leading" secondItem="s3E-yx-HrY" secondAttribute="leading" constant="18" id="CLX-om-3dr"/>
+                            <constraint firstItem="Hha-rQ-d59" firstAttribute="leading" secondItem="s3E-yx-HrY" secondAttribute="leading" constant="18" id="IUg-tG-4xs"/>
+                            <constraint firstItem="LgM-fp-9xQ" firstAttribute="leading" secondItem="s3E-yx-HrY" secondAttribute="leading" constant="17" id="Vow-9B-rOP"/>
+                            <constraint firstItem="Hha-rQ-d59" firstAttribute="top" secondItem="y7x-IV-G77" secondAttribute="bottom" constant="25" id="XWo-Qj-woQ"/>
+                            <constraint firstAttribute="trailing" secondItem="LgM-fp-9xQ" secondAttribute="trailing" constant="17" id="Z5I-zG-ADZ"/>
+                            <constraint firstItem="LgM-fp-9xQ" firstAttribute="top" secondItem="wDm-eT-3Tt" secondAttribute="top" constant="36" id="aSP-ym-yQx"/>
+                            <constraint firstItem="2T5-2Q-kXd" firstAttribute="top" secondItem="Hha-rQ-d59" secondAttribute="bottom" constant="15" id="f55-9a-R8T"/>
+                            <constraint firstItem="4dK-2R-aMO" firstAttribute="bottom" secondItem="Hha-rQ-d59" secondAttribute="bottom" constant="80" id="oVk-Ye-KzN"/>
+                            <constraint firstItem="qaa-hv-O7y" firstAttribute="width" secondItem="s3E-yx-HrY" secondAttribute="width" id="sJh-To-w1W"/>
+                            <constraint firstItem="3dQ-l5-7fp" firstAttribute="top" secondItem="4dK-2R-aMO" secondAttribute="top" constant="36" id="sP0-vx-Hy5"/>
+                            <constraint firstItem="y7x-IV-G77" firstAttribute="width" secondItem="s3E-yx-HrY" secondAttribute="width" id="tPA-If-exd"/>
+                            <constraint firstAttribute="trailing" secondItem="wDm-eT-3Tt" secondAttribute="trailing" constant="17" id="u0N-dX-6wd"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4bJ-bM-VQm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="431.5" y="1233.5"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -14,15 +356,24 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zce-s5-JlS">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Exd-PR-Yll">
-                                <rect key="frame" x="273" y="550" width="55" height="30"/>
-                                <state key="normal" title="Find Me"/>
+                                <rect key="frame" x="157" y="610" width="61" height="37"/>
+                                <fontDescription key="fontDescription" name="GTWalsheimRegular" family="GT Walsheim" pointSize="17"/>
+                                <state key="normal" title="Find Me">
+                                    <color key="titleColor" red="0.1803921568627451" green="0.43529411764705883" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="173" y="350" width="55" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="157" y="610" width="61" height="37"/>
+                                </variation>
                                 <connections>
                                     <action selector="centreOnUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6hR-oY-6x9"/>
                                 </connections>
@@ -38,13 +389,36 @@
                             <constraint firstItem="Zce-s5-JlS" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="ju1-Sh-vH0"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="c5c-0q-ROG"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="findMeButton" destination="Exd-PR-Yll" id="1MR-gq-BJr"/>
                         <outlet property="mapView" destination="Zce-s5-JlS" id="AEz-ez-Ojd"/>
+                        <segue destination="2yc-UR-f0X" kind="presentation" identifier="loginView" id="oyq-v3-WtS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-60.375" y="348.375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SLk-I5-A3p">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pxz-8x-Qv7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lOa-YI-VbE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wOK-m8-MF0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SGM-db-xLh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-663" y="348"/>
         </scene>
     </scenes>
 </document>

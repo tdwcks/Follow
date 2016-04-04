@@ -24,7 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     override init() {
     
         super.init()
-        
     }
     
     func applicationWillResignActive(application: UIApplication) {
